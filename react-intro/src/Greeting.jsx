@@ -1,3 +1,3 @@
-export default function Greeting() {
-  return <h2>Hello from Greeting component!</h2>;
+export function Greeting({ name }) {
+  return <h2>Hello, {name}! 👋</h2>;
 }
