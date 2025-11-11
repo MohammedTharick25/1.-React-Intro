@@ -1,16 +1,18 @@
 import React from "react";
 import "./App.css";
-
+// lodash utility package
+import _ from "lodash";
 // Import components
 import Header from "./Header";
 import Footer from "./Footer";
 import { Greeting } from "./Greeting";
 
 // Import utility
-import { formatDate } from "./utils/formatDate";
+import { formatDate } from "../utils/formatDate";
 
 function App() {
   const today = new Date();
+  const cword = _.capitalize("hello");
 
   return (
     <div>
@@ -19,6 +21,7 @@ function App() {
         <Greeting name="React Developer" />
         <p>Today is {formatDate(today)}.</p>
       </main>
+      <p>{cword}</p>
       <Footer />
     </div>
   );
