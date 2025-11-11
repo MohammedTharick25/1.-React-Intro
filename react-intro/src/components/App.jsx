@@ -6,6 +6,7 @@ import _ from "lodash";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Greeting } from "./Greeting";
+import Button from "./Button";
 
 // Import utility
 import { formatDate } from "../utils/formatDate";
@@ -22,6 +23,7 @@ function App() {
         <p>Today is {formatDate(today)}.</p>
       </main>
       <p>{cword}</p>
+      <Button />
       <Footer />
     </div>
   );
